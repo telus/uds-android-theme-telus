@@ -10,7 +10,8 @@ android {
     defaultConfig {
         minSdk 21
         targetSdk 32
-
+        versionCode 10001
+        versionName "1.0.1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
@@ -44,7 +45,7 @@ publishing {
         release(MavenPublication) {
             groupId = 'com.github.QuickChangeSpidey'
             artifactId = 'uds-android-theme-telus'
-            version = '0.0.0'
+            version = {versionName}
             afterEvaluate {
                 from components.release
             }
