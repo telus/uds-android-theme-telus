@@ -1,4 +1,4 @@
-# uds-android-theme-public-mobile
+# uds-android-theme-telus
 jitpack android repo for telus theme
 
 ## Description
