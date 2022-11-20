@@ -8,8 +8,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        println(Sydney.suburbs)
-        object {}.javaClass.getResourceAsStream("/raw/telus_theme.json")?.use { it.reader(Charsets.UTF_8).readText() }
-
+        val test = resources.openRawResource(com.telus.uds_android_theme_telus.R.raw.telus_theme).use { it.reader(Charsets.UTF_8).readText() }
+        println(test)
     }
 }
